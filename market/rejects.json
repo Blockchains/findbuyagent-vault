@@ -1,0 +1,29 @@
+{
+ "generatedAt": "2026-11-02T08:47:23.740Z",
+ "bazaarTotal": 71427,
+ "read": 71467,
+ "candidates": 66843,
+ "probed": 1400,
+ "listed": 480,
+ "reasons": {
+  "over per-provider cap (4 per host)": 60087,
+  "lower-ranked, not probed this run": 5356,
+  "duplicate listing": 1472,
+  "no documented inputs, outputs or example": 1051,
+  "over listing cap": 913,
+  "test, demo, echo or placeholder endpoint": 870,
+  "missing or too-short description": 561,
+  "no valid Base USDC exact price in listing (other network/asset, testnet or zero)": 519,
+  "generic payment-only description": 96,
+  "non-https, local, tunnel, staging or testnet host": 59,
+  "endpoint did not answer 402 (HTTP 400)": 3,
+  "metadata contains instructions aimed at agents (ignored, not listed)": 2,
+  "endpoint did not answer 402 (HTTP 200)": 2,
+  "endpoint did not answer 402 (HTTP 500)": 1,
+  "endpoint dead or timed out": 1
+ },
+ "injectionAttempts": [
+  "https://seenly-injection-screen.vercel.app/api/screen",
+  "https://api.powerstripsecurity.workers.dev/v1/scan"
+ ]
+}

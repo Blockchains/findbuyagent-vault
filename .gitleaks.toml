@@ -5,4 +5,10 @@ useDefault = true
 [allowlist]
 description = "public x402 Bazaar listing examples"
 regexTarget = "line"
-regexes = ['''"(requestKey|tokenAddress|token_address|tokenMint|mint|contract_address|contractAddress|address)":\s*"''']
+regexes = [
+  '''"(requestKey|tokenAddress|token_address|tokenMint|mint|contract_address|contractAddress|address)":\s*"''',
+  # Sellers' public example values: token contract addresses (0x + 40 hex) and Solana account keys (base58) in
+  # Bazaar output examples, raw, JSON-escaped or HTML-escaped. Only address-shaped values are allowed.
+  '''(\\?"|&quot;)(token|tokens|account_keys)(\\?"|&quot;):\s*\[?\s*(\\?"|&quot;)(0x[0-9a-fA-F]{40}|[1-9A-HJ-NP-Za-km-z]{32,44})\b''',
+  '''(\?|&|&amp;)(token|tokens)=0x[0-9a-fA-F]{40}\b''',
+]
