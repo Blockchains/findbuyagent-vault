@@ -1,0 +1,8 @@
+# Seller-published example values copied from the public Coinbase x402 Bazaar (token contract
+# addresses, sample request ids) trip generic-api-key. They are public listing data, not secrets.
+[extend]
+useDefault = true
+[allowlist]
+description = "public x402 Bazaar listing examples"
+regexTarget = "line"
+regexes = ['''"(requestKey|tokenAddress|token_address|tokenMint|mint|contract_address|contractAddress|address)":\s*"''']
