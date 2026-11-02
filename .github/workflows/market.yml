@@ -1,0 +1,28 @@
+name: market
+on:
+  schedule: [{ cron: '23 1,9,17 * * *' }]   # three times a day
+  issues: { types: [opened, edited, closed, reopened] }
+  workflow_dispatch:
+permissions: { contents: write, issues: read }
+concurrency: { group: market, cancel-in-progress: false }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: re-verify services (live 402 probes, no payments)
+        if: github.event_name != 'issues'
+        run: node verify.mjs
+        working-directory: market
+      - name: aggregate ratings
+        if: github.event_name != 'issues' || startsWith(github.event.issue.title, 'Rating:') || startsWith(github.event.issue.title, 'rating:')
+        env: { GITHUB_TOKEN: '${{ github.token }}' }
+        run: node ratings.mjs
+        working-directory: market
+      - name: commit
+        run: |
+          git config user.name fba-market && git config user.email fba-market@users.noreply.github.com
+          git add market/market.json market/ratings.json && (git diff --cached --quiet || (git commit -qm "market: verify/ratings $(date -u +%FT%TZ)" && git pull -q --rebase && git push -q))

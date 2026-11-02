@@ -6,3 +6,5 @@ Public, **encrypted-only** store for FindBuyAgent burner-wallet receipts. Writte
 - `v/<wallet>/<budget>-<request>.json`: `{ v, alg, epk, nonce, ct }`, a nacl.box (X25519 + XSalsa20-Poly1305) ciphertext to that wallet's vault public key.
 
 The vault key is derived in the browser from the wallet's signature of a fixed message (sha256 of the signature = X25519 secret). Nobody without that wallet's signature can read these files. Nothing in this repo is plaintext.
+
+- `market/`: the FindBuyAgent marketplace data (live-verified x402 services and ratings). See market/README.md. Rating issues (title `Rating: <slug>`) live in this repo.
