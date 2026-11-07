@@ -1,25 +1,27 @@
 {
- "generatedAt": "2026-11-07T15:48:17.015Z",
- "bazaarTotal": 34360,
- "read": 34360,
- "candidates": 29473,
+ "generatedAt": "2026-11-07T21:00:11.816Z",
+ "bazaarTotal": 34244,
+ "read": 34249,
+ "candidates": 29388,
  "probed": 1400,
  "listed": 480,
  "reasons": {
-  "over per-provider cap (4 per host)": 22916,
-  "lower-ranked, not probed this run": 5157,
-  "test, demo, echo or placeholder endpoint": 1522,
-  "duplicate listing": 1198,
-  "no documented inputs, outputs or example": 1044,
+  "over per-provider cap (4 per host)": 22837,
+  "lower-ranked, not probed this run": 5151,
+  "test, demo, echo or placeholder endpoint": 1526,
+  "duplicate listing": 1191,
+  "no documented inputs, outputs or example": 1039,
   "over listing cap": 920,
-  "missing or too-short description": 503,
-  "no valid Base USDC exact price in listing (other network/asset, testnet or zero)": 494,
+  "no valid Base USDC exact price in listing (other network/asset, testnet or zero)": 492,
+  "missing or too-short description": 488,
   "generic payment-only description": 98,
   "non-https, local, tunnel, staging or testnet host": 36,
-  "metadata contains instructions aimed at agents (ignored, not listed)": 2
+  "metadata contains instructions aimed at agents (ignored, not listed)": 2,
+  "endpoint did not answer 402 (HTTP 503)": 2,
+  "endpoint dead or timed out": 1
  },
  "injectionAttempts": [
-  "https://api.powerstripsecurity.workers.dev/v1/scan",
-  "https://seenly-injection-screen.vercel.app/api/screen"
+  "https://seenly-injection-screen.vercel.app/api/screen",
+  "https://api.powerstripsecurity.workers.dev/v1/scan"
  ]
 }
