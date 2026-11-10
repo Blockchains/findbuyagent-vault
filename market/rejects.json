@@ -1,27 +1,29 @@
 {
- "generatedAt": "2026-11-09T19:57:34.224Z",
- "bazaarTotal": 33276,
- "read": 33276,
- "candidates": 28216,
+ "generatedAt": "2026-11-10T08:31:25.872Z",
+ "bazaarTotal": 33236,
+ "read": 33236,
+ "candidates": 28133,
  "probed": 1400,
  "listed": 480,
  "reasons": {
-  "over per-provider cap (4 per host)": 21643,
-  "lower-ranked, not probed this run": 5173,
-  "test, demo, echo or placeholder endpoint": 1494,
-  "no documented inputs, outputs or example": 1276,
-  "duplicate listing": 1173,
-  "over listing cap": 920,
-  "no valid Base USDC exact price in listing (other network/asset, testnet or zero)": 503,
-  "missing or too-short description": 491,
-  "generic payment-only description": 100,
-  "non-https, local, tunnel, staging or testnet host": 33,
+  "over per-provider cap (4 per host)": 21555,
+  "lower-ranked, not probed this run": 5178,
+  "test, demo, echo or placeholder endpoint": 1487,
+  "no documented inputs, outputs or example": 1294,
+  "duplicate listing": 1194,
+  "over listing cap": 911,
+  "no valid Base USDC exact price in listing (other network/asset, testnet or zero)": 515,
+  "missing or too-short description": 487,
+  "generic payment-only description": 102,
+  "non-https, local, tunnel, staging or testnet host": 35,
+  "endpoint did not answer 402 (HTTP 404)": 4,
   "endpoint did not answer 402 (HTTP 530)": 3,
   "metadata contains instructions aimed at agents (ignored, not listed)": 2,
-  "endpoint did not answer 402 (HTTP 429)": 1
+  "endpoint did not answer 402 (HTTP 400)": 2,
+  "endpoint did not answer 402 (HTTP 503)": 1
  },
  "injectionAttempts": [
-  "https://api.powerstripsecurity.workers.dev/v1/scan",
-  "https://seenly-injection-screen.vercel.app/api/screen"
+  "https://seenly-injection-screen.vercel.app/api/screen",
+  "https://api.powerstripsecurity.workers.dev/v1/scan"
  ]
 }
