@@ -1,23 +1,23 @@
 {
- "generatedAt": "2026-11-11T23:33:32.971Z",
- "bazaarTotal": 33501,
- "read": 33498,
- "candidates": 28439,
+ "generatedAt": "2026-11-12T08:28:37.046Z",
+ "bazaarTotal": 33788,
+ "read": 33788,
+ "candidates": 28758,
  "probed": 1400,
  "listed": 480,
  "reasons": {
-  "over per-provider cap (4 per host)": 21890,
-  "lower-ranked, not probed this run": 5149,
-  "test, demo, echo or placeholder endpoint": 1480,
+  "over per-provider cap (4 per host)": 22219,
+  "lower-ranked, not probed this run": 5139,
+  "test, demo, echo or placeholder endpoint": 1484,
   "no documented inputs, outputs or example": 1314,
-  "duplicate listing": 1156,
+  "duplicate listing": 1147,
   "over listing cap": 920,
-  "no valid Base USDC exact price in listing (other network/asset, testnet or zero)": 526,
+  "no valid Base USDC exact price in listing (other network/asset, testnet or zero)": 501,
   "missing or too-short description": 464,
   "generic payment-only description": 100,
   "non-https, local, tunnel, staging or testnet host": 30,
   "metadata contains instructions aimed at agents (ignored, not listed)": 2,
-  "endpoint dead or timed out": 1
+  "endpoint did not answer 402 (HTTP 404)": 1
  },
  "injectionAttempts": [
   "https://seenly-injection-screen.vercel.app/api/screen",
