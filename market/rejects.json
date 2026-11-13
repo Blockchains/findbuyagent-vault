@@ -1,27 +1,28 @@
 {
- "generatedAt": "2026-11-12T17:40:24.582Z",
- "bazaarTotal": 33813,
- "read": 33812,
- "candidates": 28862,
+ "generatedAt": "2026-11-13T08:11:13.992Z",
+ "bazaarTotal": 34011,
+ "read": 34011,
+ "candidates": 29084,
  "probed": 1400,
  "listed": 480,
  "reasons": {
-  "over per-provider cap (4 per host)": 22344,
-  "lower-ranked, not probed this run": 5118,
-  "test, demo, echo or placeholder endpoint": 1482,
-  "no documented inputs, outputs or example": 1261,
-  "duplicate listing": 1134,
-  "over listing cap": 919,
-  "no valid Base USDC exact price in listing (other network/asset, testnet or zero)": 492,
-  "missing or too-short description": 462,
+  "over per-provider cap (4 per host)": 22548,
+  "lower-ranked, not probed this run": 5136,
+  "test, demo, echo or placeholder endpoint": 1485,
+  "no documented inputs, outputs or example": 1263,
+  "duplicate listing": 1112,
+  "over listing cap": 920,
+  "no valid Base USDC exact price in listing (other network/asset, testnet or zero)": 486,
+  "missing or too-short description": 461,
   "generic payment-only description": 100,
-  "non-https, local, tunnel, staging or testnet host": 30,
-  "endpoint did not answer 402 (HTTP 429)": 4,
-  "metadata contains instructions aimed at agents (ignored, not listed)": 2,
-  "endpoint did not answer 402 (HTTP 404)": 1
+  "non-https, local, tunnel, staging or testnet host": 31,
+  "metadata contains instructions aimed at agents (ignored, not listed)": 3,
+  "endpoint did not answer 402 (HTTP 404)": 2,
+  "endpoint dead or timed out": 1
  },
  "injectionAttempts": [
   "https://seenly-injection-screen.vercel.app/api/screen",
-  "https://api.powerstripsecurity.workers.dev/v1/scan"
+  "https://api.powerstripsecurity.workers.dev/v1/scan",
+  "https://tgw-mindset-api.fly.dev/vendor-check"
  ]
 }
