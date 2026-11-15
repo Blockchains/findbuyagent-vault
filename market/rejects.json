@@ -1,26 +1,26 @@
 {
- "generatedAt": "2026-11-15T16:29:15.909Z",
- "bazaarTotal": 34388,
- "read": 34387,
- "candidates": 28739,
+ "generatedAt": "2026-11-15T21:55:22.130Z",
+ "bazaarTotal": 33212,
+ "read": 33212,
+ "candidates": 28317,
  "probed": 1400,
  "listed": 480,
  "reasons": {
-  "over per-provider cap (4 per host)": 22434,
-  "lower-ranked, not probed this run": 4905,
-  "test, demo, echo or placeholder endpoint": 2226,
-  "no documented inputs, outputs or example": 1225,
-  "duplicate listing": 1066,
+  "over per-provider cap (4 per host)": 22022,
+  "lower-ranked, not probed this run": 4895,
+  "test, demo, echo or placeholder endpoint": 1475,
+  "no documented inputs, outputs or example": 1221,
+  "duplicate listing": 1074,
   "over listing cap": 920,
-  "missing or too-short description": 534,
-  "no valid Base USDC exact price in listing (other network/asset, testnet or zero)": 476,
-  "generic payment-only description": 101,
+  "missing or too-short description": 535,
+  "no valid Base USDC exact price in listing (other network/asset, testnet or zero)": 470,
+  "generic payment-only description": 100,
   "non-https, local, tunnel, staging or testnet host": 32,
   "metadata contains instructions aimed at agents (ignored, not listed)": 3
  },
  "injectionAttempts": [
-  "https://api.powerstripsecurity.workers.dev/v1/scan",
   "https://seenly-injection-screen.vercel.app/api/screen",
+  "https://api.powerstripsecurity.workers.dev/v1/scan",
   "https://tgw-mindset-api.fly.dev/vendor-check"
  ]
 }
